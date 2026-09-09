@@ -6,6 +6,14 @@
     <title>Login</title>
 </head>
 <body>
-    <h1>Login</h1>
+
+    <form action="{% url 'login' %}" method="post"> {%csrf_token%}
+        <input type="text" placeholder="username" name="username">
+        <br>
+        <input type="password" placeholder="senha" name="senha">
+            <br>
+        <input type="submit" value="Cadastro">
+    </form>
+
 </body>
 </html>
